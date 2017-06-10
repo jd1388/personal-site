@@ -15,9 +15,13 @@ var config = {
             {
                 test: /\.jsx?/,
                 include: APP_DIRECTORY,
-                loaderr: 'babel-loader'
+                loader: 'babel-loader'
             }
         ]
+    },
+    devServer: {
+        contentBase: './public',
+        hot: true
     }
 };
 
