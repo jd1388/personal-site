@@ -1,27 +1,38 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
 
-var BUILD_DIRECTORY = path.resolve(__dirname, 'public');
-var APP_DIRECTORY = path.resolve(__dirname, 'src');
+const BUILD_DIRECTORY = path.resolve(__dirname, 'public');
+const APP_DIRECTORY = path.resolve(__dirname, 'src');
+const TEST_DIRECTORY = path.resolve(__dirname, 'test');
 
-var config = {
+const config = {
     entry: APP_DIRECTORY + '/index.jsx',
     output: {
         path: BUILD_DIRECTORY,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: 'http://localhost:7700/public'
     },
     module: {
         loaders: [
             {
                 test: /\.jsx?/,
-                include: APP_DIRECTORY,
-                loader: 'babel-loader'
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['react', 'es2015', 'stage-0']
+                }
             }
         ]
     },
     devServer: {
         contentBase: './public',
-        hot: true
+        hot: true,
+        inline: true,
+        port: 7700,
+        historyApiFallback: true
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     }
 };
 
