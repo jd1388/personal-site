@@ -1,8 +1,13 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-export default class App extends React.Component {
+import {BrowserRouter} from 'react-router-dom';
+import App from './app.jsx';
+
+export default class Index extends React.Component {
     render() {
-        return <p>Hello react stuff and things!</p>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     }
 }
