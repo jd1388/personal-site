@@ -13,6 +13,20 @@ describe('<App/>', function () {
     })
 
     it('should have a BrowserRouter as its root element', function () {
-        expect(app.contains(<BrowserRouter/>));
+        expect(app.find('BrowserRouter')).to.have.length(1);
     });
+
+    describe('<BrowserRouter/>', function () {
+        let router;
+
+        beforeEach(function () {
+            router = app.find('BrowserRouter')[0];
+        });
+
+        it('should contain the body component', function () {
+            console.log(router);
+
+            expect(router.find('Body')).to.have.length(1);
+        });
+    })
 });
