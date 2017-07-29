@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {expect} from 'chai';
 
-import App from '../src/index.jsx';
+import App from '../src/app.jsx';
 
 describe('<App/>', function () {
     it('should have the test tag', function () {
