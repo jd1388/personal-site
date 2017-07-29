@@ -10,7 +10,7 @@ const config = {
     output: {
         path: BUILD_DIRECTORY,
         filename: 'bundle.js',
-        publicPath: 'http://localhost:7700/public'
+        publicPath: 'https://localhost:8080/public'
     },
     module: {
         loaders: [
@@ -28,7 +28,7 @@ const config = {
         contentBase: './public',
         hot: true,
         inline: true,
-        port: 7700,
+        port: 8080,
         historyApiFallback: true
     },
     resolve: {
