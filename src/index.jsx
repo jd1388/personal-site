@@ -1,8 +1,5 @@
+import App from './app.jsx';
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDom from 'react-dom';
 
-export default class App extends React.Component {
-    render() {
-        return <p>Hello react stuff and things!</p>
-    }
-}
+ReactDom.render(<App/>, document.body);
