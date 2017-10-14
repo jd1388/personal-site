@@ -1,0 +1,20 @@
+@import './colors';
+
+.main-content-gutter {
+    width: 15%;
+    height: calc(100% - 4em);
+    margin: 0;
+    display: block;
+    background-color: $mirage;
+}
+
+.main-content-body {
+    width: 70%;
+    height: calc(100% - 4em);
+    background-color: $teal-blue;
+}
+
+.main-content-container {
+    display: flex;
+    padding-top: 4em;
+}
