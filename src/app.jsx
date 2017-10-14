@@ -4,6 +4,8 @@ import {BrowserRouter} from 'react-router-dom';
 
 import Body from './body';
 
+import '../sass/app.scss';
+
 export default class App extends React.Component {
     render() {
         return (

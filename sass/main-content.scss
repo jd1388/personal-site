@@ -1,0 +1,21 @@
+@import './colors';
+
+.main-content-gutter {
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    display: block;
+    background-color: $mirage;
+}
+
+.main-content-body {
+    width: 70%;
+    height: 100%;
+    background-color: $boston-blue;
+}
+
+.main-content-container {
+    display: flex;
+    padding-top: 4em;
+    height: calc(100% - 12em);
+}

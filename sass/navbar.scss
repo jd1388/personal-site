@@ -1,0 +1,21 @@
+@import './colors';
+
+.navbar-container {
+    height: 4em;
+    width: 100%;
+    background-color: $elephant;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-home {
+    font-family: monospace;
+    text-decoration: none;
+    color: $gold-tips;
+    display: block;
+    padding-top: 0.5em;
+    padding-left: 15%;
+    font-size: 30px;
+}
