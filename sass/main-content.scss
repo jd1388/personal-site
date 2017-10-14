@@ -5,13 +5,13 @@
     height: calc(100% - 4em);
     margin: 0;
     display: block;
-    background-color: $mirage;
+    background-color: darken($boston-blue, 30%);
 }
 
 .main-content-body {
     width: 70%;
     height: calc(100% - 4em);
-    background-color: $teal-blue;
+    background-color: $boston-blue;
 }
 
 .main-content-container {
