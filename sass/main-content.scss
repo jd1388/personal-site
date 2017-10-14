@@ -11,11 +11,27 @@
 .main-content-body {
     width: 70%;
     height: 100%;
-    background-color: $boston-blue;
+    background-color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 48px;
 }
 
 .main-content-container {
-    display: flex;
     padding-top: 4em;
-    height: calc(100% - 12em);
+    display: flex;
+    height: 100%;
+}
+
+.main-content-hero {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 80px;
+    background-color: $boston-blue;
+    color: white;
+}
+
+.main-content-hero-spacer {
+    height: 7em;
+    background-color: $boston-blue;
 }
