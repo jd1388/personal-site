@@ -2,19 +2,20 @@
 
 .main-content-gutter {
     width: 15%;
-    height: calc(100% - 4em);
+    height: 100%;
     margin: 0;
     display: block;
-    background-color: darken($boston-blue, 30%);
+    background-color: $mirage;
 }
 
 .main-content-body {
     width: 70%;
-    height: calc(100% - 4em);
+    height: 100%;
     background-color: $boston-blue;
 }
 
 .main-content-container {
     display: flex;
     padding-top: 4em;
+    height: calc(100% - 12em);
 }

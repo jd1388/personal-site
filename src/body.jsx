@@ -8,7 +8,7 @@ import Test from './test';
 export default class Body extends React.Component {
     render() {
         return (
-            <main className='app-container'>
+            <main>
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/routetest' component={Test}/>
